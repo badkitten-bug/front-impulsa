@@ -1,0 +1,137 @@
+.dualContainer {
+    width: 100%;
+    height: calc(100dvh - 8rem);
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--primary-color-with-opacity);
+    background-image: url(../../../../../../assets/doble_arrow_right_white.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.backButton {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dualForm {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 2rem;
+    height: 100%;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.sideContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.sideTitle {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.sideContainer :global(svg) {
+    width: 75px;
+    height: 75px;
+    margin: 20px auto;
+}
+
+.divider {
+    width: 1px;
+    background-color: var(--primary-color);
+    margin: 0 1rem;
+}
+
+.status {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.submitContainer {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 300px;
+    z-index: 10;
+}
+
+.pdfIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    transform: scale(0.9); /* Aumentado de 0.75 a 0.9 */
+    padding: 10px;
+}
+
+.pdfIconContainer svg {
+    width: 100px; /* Aumentado de 80px a 100px */
+    height: 100px; /* Aumentado de 80px a 100px */
+}
+
+@media only screen and (max-width: 768px) {
+    .dualContainer {
+        padding: 1.5rem;
+        height: auto;
+        min-height: calc(100dvh - 6rem);
+    }
+
+    .dualForm {
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 8rem;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+
+    .submitContainer {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        margin-top: 2rem;
+    }
+} 

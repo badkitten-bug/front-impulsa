@@ -1,0 +1,30 @@
+.container {
+	width: 15rem;
+	display: flex;
+	justify-content: center;
+}
+
+.arrowLeft,
+.arrowRight {
+	color: var(--primary-color);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.info {
+	width: 100%;
+	background-color: var(--primary-color);
+	color: var(--generic-color);
+	font-size: var(--fs-md);
+	font-weight: var(--w-bold-title);
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.disabled {
+	color: var(--dashboard-input-options-color);
+	cursor: initial;
+}

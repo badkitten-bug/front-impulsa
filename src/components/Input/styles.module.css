@@ -1,0 +1,23 @@
+.container {
+	background-color: var(--generic-color);
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	width: 100%;
+	display: flex;
+	justify-items: center;
+}
+
+.input {
+	width: 100%;
+	text-decoration: none;
+	outline: none;
+	font-weight: var(--w-btn);
+	color: var(--primary-color);
+	font-size: var(--fs-base);
+}
+
+@media only screen and (max-width: 580px) {
+	.container {
+		/* min-width: 20rem; */
+	}
+}

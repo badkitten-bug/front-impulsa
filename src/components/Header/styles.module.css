@@ -1,0 +1,29 @@
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 2rem;
+}
+
+.header_logo {
+	width: 15rem;
+	object-fit: contain;
+}
+
+.header_ctas {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+@media only screen and (max-width: 980px) {
+	.header {
+		justify-content: space-between;
+		padding: 2rem 2rem;
+		gap: 1rem;
+	}
+
+	.button {
+		display: none;
+	}
+}

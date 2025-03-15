@@ -1,0 +1,89 @@
+.form {
+	width: 100%;
+	max-width: 28rem;
+	background: linear-gradient(135deg,
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0));
+	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	align-items: center;
+	padding: 4rem 2rem;
+}
+
+.form_title {
+	color: var(--generic-color);
+	text-align: center;
+}
+
+.form_title span {
+	font-weight: var(--w-bold-title);
+	font-size: 2em;
+}
+
+.form_title p {
+	font-weight: var(--w-paragraph);
+	font-size: 1.2em;
+	color: var(--generic-color)
+}
+
+.form_loginGoogle {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.form_emailLogin {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.form_emailLogin label {
+	color: var(--generic-color);
+}
+
+.form_emailLogin input {
+	text-decoration: none;
+	background-color: var(--generic-color);
+	color: var(--primary-color);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	font-weight: var(--w-btn);
+	outline: none;
+}
+
+.form_legalConditions {
+	color: var(--generic-color);
+}
+
+.form_legalConditions a {
+	text-decoration: underline;
+	color: var(--generic-color);
+}
+
+@media only screen and (max-width: 580px) {
+	.form {
+		width: 100%;
+		max-width: 28rem;
+		background: linear-gradient(135deg,
+				rgba(255, 255, 255, 0.1),
+				rgba(255, 255, 255, 0));
+		backdrop-filter: blur(40px);
+		-webkit-backdrop-filter: blur(40px);
+		border-radius: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+		padding: 4rem 2rem;
+		margin: 0 auto;
+	}
+}

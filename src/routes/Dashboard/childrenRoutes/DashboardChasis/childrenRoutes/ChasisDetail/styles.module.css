@@ -1,0 +1,33 @@
+.container {
+	width: 100%;
+	height: calc(100dvh - 8rem);
+	padding: 2rem 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	position: relative;
+	background-color: var(--primary-color-with-opacity);
+	background-image: url(../../../../../../assets/doble_arrow_right_white.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.input {
+	width: 100%;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.submit {
+	width: 100%;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 580px) {
+	.container {
+		padding: initial;
+		padding: 2rem 2rem;
+		height: calc(100dvh - 5rem);
+	}
+}

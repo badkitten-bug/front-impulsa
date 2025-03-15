@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+	/* COLORS */
+	--primary-color: #02507e;
+	--secondary-color: #0c77b7;
+	--generic-color: #ffffff;
+	--primary-gradient: linear-gradient(
+		160deg,
+		rgba(2, 80, 126, 1) 0%,
+		rgba(0, 160, 255, 0.2) 100%
+	);
+	--primary-color-with-opacity: #02517e25;
+	--generic-color-with-opacity: #ffffff62;
+	--dashboar-input-color: #e8e8e8;
+	--dashboard-input-options-color: #afafaf;
+	--dashboard-radio-color: #e8e8e8;
+	--dashboard-chasis-color: #f0faff;
+	--disabled-color: #7f7f7f;
+
+	/* FONT */
+	--primary-font: 'Assistant', sans-serif;
+	--carrusel-font: 'Assistant', serif;
+
+	/* FONT SIZE */
+	--fs-sm: clamp(0.8rem, -0.05vw + 0.81rem, 0.75rem);
+	--fs-base: clamp(1rem, 0vw + 1rem, 1rem);
+	--fs-md: clamp(1.25rem, 0.08vw + 1.23rem, 1.33rem);
+	--fs-lg: clamp(1.56rem, 0.21vw + 1.52rem, 1.78rem);
+	--fs-xl: clamp(1.95rem, 0.42vw + 1.87rem, 2.37rem);
+	--fs-xxl: clamp(2.44rem, 0.72vw + 2.3rem, 3.16rem);
+	--fs-xxxl: clamp(3.05rem, 1.16vw + 2.82rem, 4.21rem);
+
+	/* WEIGHT */
+	--w-bold-title: 800;
+	--w-bold-subtitle: 600;
+	--w-highlighted-text: 500;
+	--w-ctas: 400;
+	--w-paragraph: 300;
+}
+
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* outline: 1px solid rgb(205, 50, 50) !important; */
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	font-family: var(--primary-font);
+	font-optical-sizing: auto;
+	font-family: var(--primary-font);
+	font-optical-sizing: auto;
+}
+
+img {
+	max-width: 100%;
+}

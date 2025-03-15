@@ -1,0 +1,153 @@
+.cardContainer {
+	width: 100%;
+	max-width: 50rem;
+	border-radius: 1.5rem;
+	background-color: var(--primary-color);
+	padding: 2rem 1rem;
+	position: relative;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.dobleArrow {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: inherit;
+}
+
+.card_title {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+.card_title p {
+	color: var(--generic-color);
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-xl);
+	text-align: center;
+}
+
+.card_title div {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.cardDataProfile {
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+	z-index: 10;
+}
+
+.editBtnMovile {
+	display: none;
+}
+
+.cardContainer figure {
+	width: 300px;
+	min-height: 22rem;
+	border-radius: 0.8rem;
+}
+
+.cardContainer figure img {
+	width: 300px;
+	min-height: 22rem;
+	object-fit: cover;
+	border-radius: 0.8rem;
+}
+
+.cardContainer div img {
+	width: 100%;
+	max-width: 30rem;
+}
+
+.data {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.data h1 {
+	color: var(--generic-color);
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-xl);
+}
+
+.data p {
+	color: var(--generic-color);
+	font-weight: var(--w-paragraph);
+	font-size: var(--fs-md);
+}
+
+.data :nth-child(2)::first-letter {
+	text-transform: uppercase;
+}
+
+.data p:nth-child(2) {
+	font-weight: var(--w-ctas);
+	font-size: var(--fs-lg);
+}
+
+@media only screen and (max-width: 580px) {
+	.cardContainer {
+		max-width: 20rem;
+		padding: 1rem 0.5rem;
+		max-width: initial;
+	}
+
+	.dobleArrow {
+		display: none;
+	}
+
+	.card_title {
+		display: none;
+	}
+	.cardDataProfile {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.containerImg {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	.cardContainer figure {
+		min-height: 20rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.cardContainer figure img {
+		min-height: 20rem;
+	}
+
+	.editBtnMovile {
+		display: initial;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0.5rem;
+	}
+
+	.cardContainer div img {
+		width: 100%;
+		max-width: 15rem;
+	}
+
+	.data {
+		text-align: center;
+	}
+}

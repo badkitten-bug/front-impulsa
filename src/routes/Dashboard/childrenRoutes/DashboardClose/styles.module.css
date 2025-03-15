@@ -1,0 +1,46 @@
+.main {
+	height: 100%;
+	background-image: url(../../../../assets/hero-close-dashboard.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.main::after {
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--primary-gradient);
+	z-index: 0;
+}
+
+.main div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+.main h1 {
+	color: var(--generic-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-xxl);
+	text-align: center;
+}
+
+.button {
+	text-decoration: none;
+	background-color: var(--generic-color);
+	color: var(--primary-color);
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-lg);
+	padding: 1rem 2rem;
+	border-radius: 5rem;
+}

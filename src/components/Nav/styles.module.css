@@ -1,0 +1,21 @@
+.nav ul {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: 2.5rem;
+	align-items: center;
+}
+
+.link {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-size: var(--fs-base);
+	font-weight: var(--w-ctas);
+}
+
+@media only screen and (max-width: 784px) {
+	.nav {
+		display: none;
+	}
+}

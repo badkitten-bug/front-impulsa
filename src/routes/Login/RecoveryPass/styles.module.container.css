@@ -1,0 +1,29 @@
+.main {
+	width: 100%;
+	height: 100dwh;
+	background-color: var(--primary-color);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	overflow: hidden;
+	justify-items: center;
+}
+
+.picture {
+	width: 100%;
+	height: 100dvh;
+}
+
+.picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 580px) {
+	.main {
+		display: flex;
+	}
+	.picture {
+		display: none;
+	}
+}

@@ -1,0 +1,117 @@
+/* INPUT  */
+
+.inputContainer {
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.inputContainer label {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-base);
+	width: 100%;
+}
+
+.input {
+	border: none;
+	outline: none;
+	background-color: var(--dashboar-input-color);
+	border-radius: 5rem;
+	width: 100%;
+	height: 1.5rem;
+	padding: 0 1rem;
+}
+
+.input::placeholder {
+	color: var(--dashboard-input-options-color);
+	padding: 0 0.25rem;
+}
+
+.selectContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.select {
+	border: none;
+	background-color: var(--dashboar-input-color);
+	border-radius: 5rem;
+	width: 100%;
+	height: 1.5rem;
+	outline: none;
+	color: var(--dashboard-input-options-color);
+}
+
+.select option {
+	color: var(--primary-color);
+}
+
+.fieldset {
+	width: 10rem;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.fieldset div {
+	display: flex;
+}
+
+.fieldset div input {
+	appearance: none;
+}
+
+.label {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: var(--w-bold-subtitle);
+}
+
+input[type='radio'] + label::before {
+	content: '';
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border: solid 5px var(--dashboard-radio-color);
+	border-radius: 5rem;
+	cursor: pointer;
+}
+
+input[type='radio']:checked + label::before {
+	background-color: var(--dashboard-input-options-color);
+}
+
+.label {
+	color: var(--primary-color);
+}
+
+.base {
+	max-width: 5rem;
+}
+
+.sm {
+	max-width: 10rem;
+}
+
+.md {
+	max-width: 20rem;
+}
+
+.lg {
+	max-width: 30rem;
+}
+
+.xl {
+	max-width: 40rem;
+}
+
+.xxl {
+	max-width: 50rem;
+}
+
+.xxxl {
+	max-width: 60rem;
+}

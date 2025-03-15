@@ -1,0 +1,40 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	background-color: var(--primary-color);
+	padding: 3rem;
+	justify-content: center;
+	border-radius: 2rem;
+}
+
+.ask_container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.ask {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	border-bottom: 1px solid var(--generic-color);
+	padding-bottom: 0.5rem;
+	gap: 0.5rem;
+	color: var(--generic-color);
+}
+
+.ask span {
+	color: var(--generic-color);
+	font-weight: var(--w-ctas);
+	font-size: var(--fs-md);
+	width: 100%;
+}
+
+.answers {
+	color: var(--generic-color);
+	font-weight: var(--w-ctas);
+	font-size: var(--fs-base);
+}

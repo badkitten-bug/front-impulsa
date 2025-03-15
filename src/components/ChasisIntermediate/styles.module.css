@@ -1,0 +1,284 @@
+/* Front/src/components/ChasisIntermediate/styles.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #02507E;
+    color: white;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: var(--fs-xl);
+    font-weight: var(--w-bold-title);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--generic-color);
+  }
+  
+  .subtitle {
+    font-size: var(--fs-lg);
+    font-weight: var(--w-paragraph);
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--generic-color);
+  }
+  
+  .backButton {
+    background-color: #0C77B7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    width: 166px;
+    height: 48px;
+    border-radius: 20px;
+    align-self: flex-start;
+    margin-left: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .continueButton {
+    background-color: #0C77B7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding: 10px;
+    width: 166px;
+    height: 48px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Estilos para la vista de años (Educación) */
+  .yearGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .yearBox {
+    background-color: white;
+    border-radius: 20px;
+    color: #02507E;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .yearBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  .yearNumber {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    color: #02507E;
+  }
+  
+  .yearLabel {
+    font-size: 1.5rem;
+    color: #02507E;
+  }
+  
+  /* Estilos para la vista de opciones (Ahorro - Orvi 99/Start Dotal) */
+  .optionContainer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .optionBox {
+    background-color: white;
+    border-radius: 20px;
+    color: #02507E;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .optionBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  .optionTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #02507E;
+  }
+  
+  /* Estilos para la vista de pagos (10/20 pagos) */
+  .paymentGrid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .paymentBox {
+    background-color: white;
+    border-radius: 20px;
+    color: #02507E;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .paymentBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  .paymentNumber {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #02507E;
+  }
+  
+  .paymentLabel {
+    font-size: 1.2rem;
+    color: #02507E;
+    margin-top: 0.5rem;
+  }
+  
+  /* Estilos para la vista de Retiro y Pensión */
+  .retiroGrid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .retiroBox {
+    background-color: white;
+    border-radius: 20px;
+    color: #02507E;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .retiroBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  .iconContainer {
+    color: #02507E;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .yearGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    
+    .yearBox {
+      width: 150px;
+      height: 150px;
+      border-radius: 15px;
+    }
+    
+    .yearNumber {
+      font-size: 3rem;
+    }
+    
+    .yearLabel {
+      font-size: 1rem;
+    }
+    
+    .optionContainer, .paymentGrid, .retiroGrid {
+      flex-direction: column;
+    }
+    
+    .title {
+      font-size: var(--fs-md);
+    }
+    
+    .subtitle {
+      font-size: var(--fs-base);
+    }
+    
+    .optionBox, .paymentBox, .retiroBox {
+      width: 150px;
+      height: 150px;
+      border-radius: 15px;
+    }
+    
+    .paymentNumber {
+      font-size: 4rem;
+    }
+  }

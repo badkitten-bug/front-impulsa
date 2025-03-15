@@ -1,0 +1,82 @@
+.container {
+	background-color: var(--generic-color);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: dashed;
+	border-width: 4px;
+	cursor: pointer;
+	border-color: var(--secondary-color);
+}
+
+.container div {
+	width: 100%;
+	height: 100%;
+	color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.titleContainer {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.thumbnail {
+	width: 3rem;
+	height: 4rem;
+}
+
+.thumbnail img {
+	width: 3rem;
+	height: 4rem;
+	object-fit: cover;
+}
+
+.pdf {
+}
+
+.titleBase {
+	color: var(--primary-color);
+	font-weight: var(--w-paragraph);
+	font-size: var(--fs-base);
+}
+
+.titleMd {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-md);
+}
+
+.titleLg {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-lg);
+}
+
+.subtitleBase {
+	color: var(--primary-color);
+	font-weight: var(--w-paragraph);
+	font-size: var(--fs-base);
+}
+
+.subtitleMd {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-md);
+}
+
+.subtitleLg {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-lg);
+}
+
+.bgNone {
+	background-color: initial;
+}

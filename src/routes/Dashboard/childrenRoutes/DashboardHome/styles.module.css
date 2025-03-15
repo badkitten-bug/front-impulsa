@@ -1,0 +1,54 @@
+.container {
+	width: 100%;
+	height: calc(100dvh - 8rem);
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	background-image: url(../../../../assets/hero-home-dashboard.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -1;
+}
+
+.main::after {
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--primary-gradient);
+}
+
+.main div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+.main h1 {
+	color: var(--generic-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-xxl);
+	text-align: center;
+}
+
+.main p {
+	color: var(--generic-color);
+	font-weight: var(--w-paragraph);
+	font-size: var(--fs-lg);
+}
+
+@media only screen and (max-width: 580px) {
+	.container {
+		height: calc(100dvh - 5rem);
+	}
+}

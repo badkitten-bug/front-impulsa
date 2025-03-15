@@ -1,0 +1,26 @@
+.container {
+	max-width: 100%;
+	width: 12rem;
+	background-color: var(--generic-color);
+	padding: 2rem 0rem;
+	border-radius: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	cursor: pointer;
+	transition: ease 0.3s;
+}
+
+.container:hover {
+	background-color: var(--dashboard-input-options-color);
+	transition: ease 0.3s;
+}
+
+.title {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-md);
+	text-align: center;
+}

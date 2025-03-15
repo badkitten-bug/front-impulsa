@@ -1,0 +1,26 @@
+.container {
+	width: 100%;
+	max-width: 30rem;
+	background-color: var(--generic-color);
+	color: var(--primary-color);
+	text-align: center;
+	border-radius: 5rem;
+	padding: 0.5rem;
+	border: solid 2px green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-base);
+	position: absolute;
+	bottom: 1rem;
+	right: -50;
+}
+
+.container p {
+	text-transform: uppercase;
+}
+
+.container div {
+	display: flex;
+}

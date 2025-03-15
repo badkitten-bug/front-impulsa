@@ -1,0 +1,407 @@
+/* DATA CLIENT FORM */
+
+.row1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.title {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-subtitle);
+	font-size: var(--fs-base);
+}
+
+.title span {
+	font-weight: var(--w-highlighted-text);
+	color: var(--secondary-color);
+}
+
+.inputs {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+}
+
+.row2 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.row2 div {
+	width: 100%;
+}
+
+/*RECOMMENDED*/
+
+.recommendedContainer {
+	width: 100%;
+}
+
+.recommendedContainer div {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+}
+
+/* GOALS */
+
+.rowGoals1 div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.rowGoals1 div div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* FAMILY */
+
+.rowFamily1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.rowFamily2 {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+}
+
+.rowFamily2 div {
+	width: 100%;
+}
+
+.rowFamily3 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.inputsFamilyContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.rowFamily4 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.inputsChildrenContainer {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+	flex-direction: row;
+}
+
+.inputsChildrenContainer div:nth-child(1) {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.inputsChildrenContainer div:nth-child(2) {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* PROTECTION */
+
+.rowProtection1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.inputsRowProtection1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.inputRowProtection2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.rowProtection3 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.rowProtection7 .containerInputHealth2 div:nth-child(2),
+.containerInputHealth2 div:nth-child(3) {
+	display: grid;
+}
+
+.titleLarge {
+	color: var(--primary-color);
+	font-weight: var(--w-bold-title);
+	font-size: var(--fs-md);
+}
+
+.titleSmall {
+	color: var(--primary-color);
+	font-weight: var(--w-paragraph);
+	font-size: var(--fs-base);
+}
+
+.rowProtection6 div div {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+}
+
+.containerInputHealth {
+	width: 100%;
+	flex-direction: column;
+}
+
+.containerInputHealth div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.containerInputHealth2 div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.rowProtection8 div {
+}
+
+/* SAVE */
+
+.rowSave1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.rowSave2,
+.rowSave3 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* RETIREMENT */
+
+.rowRetirement2 {
+	width: 100%;
+}
+
+.rowRetirement2 div {
+	display: grid;
+	grid-template-columns: repeat(2, 18rem);
+	align-items: center;
+}
+
+.rowRetirement3 div div {
+	display: grid;
+	grid-template-columns: repeat(2, 5rem);
+	align-items: center;
+}
+
+.rowRetirement4 {
+	display: grid;
+	grid-template-columns: repeat(2, 18rem);
+	align-items: center;
+}
+
+/* EDUCATION */
+
+.rowEducation1 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.rowEducation2 {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+/* SUBMIT CONTAINER */
+
+.submitContainer {
+	width: 100%;
+	max-width: 25rem;
+	height: 5rem;
+	margin: 0 auto;
+	padding: 0.5rem 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+@media only screen and (max-width: 580px) {
+	/* DATA CLIENT FORM */
+
+	.row1 p {
+		text-align: center;
+	}
+
+	.row2 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	/*RECOMMENDED*/
+
+	.recommendedContainer {
+		text-align: center;
+	}
+
+	.recommendedContainer div {
+		flex-direction: column;
+	}
+
+	/* FAMILY */
+
+	.rowFamily1 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.rowFamily2 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.rowFamily3 {
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.inputsFamilyContainer {
+		flex-direction: column;
+	}
+
+	.rowFamily4 {
+		text-align: center;
+	}
+
+	.inputsChildrenContainer {
+		flex-direction: column;
+		border-bottom: solid 2px var(--primary-color);
+		height: 8rem;
+	}
+
+	.inputsChildrenContainer div:nth-child(1) {
+		flex-direction: column;
+	}
+	.inputsChildrenContainer div:nth-child(2) {
+		flex-direction: column;
+	}
+	/* PROTECTION */
+
+	.rowProtection1 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.inputsRowProtection1 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.inputRowProtection2 {
+		text-align: center;
+	}
+
+	.rowProtection3 {
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.rowProtection5 {
+		text-align: center;
+	}
+
+	.rowProtection6 div {
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rowProtection7 {
+		text-align: center;
+	}
+
+	.containerInputHealth2 {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.containerInputHealth2 div {
+		flex-direction: column;
+	}
+
+	/* SAVE */
+
+	.rowSave1,
+	.rowSave2,
+	.rowSave3 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	/* RETIREMENT */
+
+	.rowRetirement1 {
+		text-align: center;
+	}
+
+	.rowRetirement2 div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rowRetirement4 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.rowRetirement5 {
+		text-align: center;
+	}
+
+	/* EDUCATION */
+
+	.rowEducation1 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	.rowEducation2 {
+		text-align: center;
+	}
+
+	.submitContainer {
+		padding: 1rem 2rem;
+	}
+}

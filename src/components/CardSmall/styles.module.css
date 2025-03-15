@@ -1,0 +1,49 @@
+.container {
+	background-color: var(--generic-color);
+	width: 100%;
+	max-width: 20rem;
+	min-width: 20rem;
+	min-height: 20rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	border-radius: 2rem;
+	scroll-snap-align: start;
+}
+
+.card_title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: solid 2px var(--primary-color);
+	padding-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+
+.title {
+	color: var(--primary-color);
+	font-family: var(--w-bold-title);
+	font-size: var(--fs-md);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	overflow-wrap: break-word;
+}
+
+.paragraph {
+	color: var(--primary-color);
+	font-size: var(--fs-base);
+	font-weight: var(--w-paragraph);
+	text-align: center;
+	text-wrap: balance;
+	overflow-wrap: break-word;
+}
+
+span {
+	font-weight: var(--w-bold-subtitle);
+}

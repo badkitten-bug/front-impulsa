@@ -1,0 +1,87 @@
+/* Container Styles */
+.container {
+	font-family: 'Times New Roman', Times, serif;
+	margin: 20px;
+	padding: 15px;
+	line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.container {
+		margin: 10px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 5px;
+		padding: 5px;
+	}
+}
+
+/* Heading Styles */
+h1,
+h2,
+h3 {
+	color: #111;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+/* List Styles */
+ol,
+ul {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+	margin-bottom: 15px;
+}
+
+/* Additional Styling */
+/* p,
+li {
+	color: #222;
+} */
+
+/* Link Styles */
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.last_update {
+	font-size: 0.8em;
+	color: #555;
+	text-align: right;
+}
+i {
+	font-style: italic;
+	color: #777;
+}
+.underline {
+	text-decoration: underline;
+}
